@@ -1,0 +1,14 @@
+[general]
+name = EnerGis 6
+email = messinajuan@yahoo.com.ar
+author = Juan Messina
+qgisMinimumVersion = 4.0.0
+about = Base de Datos de EnerGis 6
+description = Gestion de Redes Electricas
+version = 6.0.0
+homepage = http://www.servimap.com.ar
+tracker = https://github.com/messinajuan/EnerGis6/issues
+repository = https://github.com/messinajuan/EnerGis6
+icon = https://www.servimap.com.ar/files/energis/energis6/icons/energis.ico
+experimental = False
+deprecated = False
