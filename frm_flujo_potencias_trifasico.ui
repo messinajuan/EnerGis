@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Flujo de Cargas</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>500</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCalcular">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>300</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular ∑</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QListView" name="lstCalculo">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>10</y>
+     <width>640</width>
+     <height>250</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>500</y>
+     <width>541</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkRegulacion">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>300</y>
+     <width>140</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Control de Regulación</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QListView" name="lstResultados">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>636</width>
+     <height>160</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>272</y>
+     <width>130</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Factor de Escala Global</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtFactorGlobal">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>270</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="text">
+    <string>1.000</string>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCalcularCargas">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>110</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular Cargas⚡</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblCarga">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>270</y>
+     <width>210</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Carga Total del Sistema [kW]: 0.000</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAplicarFe">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>270</y>
+     <width>110</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aplicar a la Red ✔️</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtFactorTension">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>300</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="text">
+    <string>1.000</string>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>302</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Factor Tension Fuentes</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

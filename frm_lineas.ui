@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>349</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Linea</string>
+  </property>
+  <widget class="QComboBox" name="cmbCapa">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtLongitud">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>328</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="datInstalacion">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>355</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>12</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Linea</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLinea">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>11</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;automático&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>12</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capa</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblZona">
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>463</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>&lt;desc.&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAlimentador">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>352</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="text">
+    <string>&lt;desc.&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>331</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Long. Real:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>359</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Instalación</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>187</x>
+     <y>490</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>354</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alimentador</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>465</y>
+     <width>30</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zona</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtExpediente">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>380</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1111/2001</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>383</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exp. Obra:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>41</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nodo Desde</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblNodoDesde">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>40</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;nodo desde&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>41</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nodo Hasta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblNodoHasta">
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>40</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;nodo hasta&gt;</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="liwElementos">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>331</width>
+     <height>231</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbFase">
+   <property name="geometry">
+    <rect>
+     <x>286</x>
+     <y>328</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbDisposicion">
+   <property name="geometry">
+    <rect>
+     <x>246</x>
+     <y>381</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbEstado">
+   <property name="geometry">
+    <rect>
+     <x>246</x>
+     <y>406</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>331</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fases</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>385</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Disposición</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>410</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Estado</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkPropiedadUsuario">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Es propiedad de Usuario(s)</string>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblLongitud">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>333</y>
+     <width>85</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>267</x>
+     <y>490</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="cmdUUCC">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>434</y>
+     <width>22</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🔍</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtUUCC">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>434</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>437</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UUCC</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkAcometida">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>438</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Es acometida</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbTernas">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>406</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ternas</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="cmdUsuarios">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>460</y>
+     <width>22</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🔍</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdNueva">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>490</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nueva✨</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdEditar">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>490</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Editar 📝</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAux">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>11</y>
+     <width>80</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbtReal">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>62</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Línea Real</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbtVirtual">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>62</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Línea Virtual (sin prop. físicas)</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

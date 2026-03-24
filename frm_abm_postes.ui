@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Apoyos</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>370</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>6</y>
+     <width>390</width>
+     <height>380</height>
+    </rect>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::South</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Apoyo</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>225</y>
+       <width>370</width>
+       <height>120</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tipo de Apoyo</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>23</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Apoyo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtApoyo">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>69</x>
+        <y>23</y>
+        <width>280</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbTipo">
+      <property name="geometry">
+       <rect>
+        <x>69</x>
+        <y>80</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>-41</x>
+        <y>81</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tipo</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>-41</x>
+        <y>51</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Material</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbMaterial">
+      <property name="geometry">
+       <rect>
+        <x>69</x>
+        <y>50</y>
+        <width>110</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdGuardarApoyo">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar 💾</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdNuevoApoyo">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nuevo✨</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdBorrarApoyo">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Borrar 🗑</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="liwApoyos">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>370</width>
+       <height>210</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Estructura</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>270</y>
+       <width>370</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tipo de Estructura</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLineEdit" name="txtEstructura">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdGuardarEstructura">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar 💾</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdNuevaEstructura">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nueva✨</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdBorrarEstructura">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Borrar 🗑</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="liwEstructuras">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>370</width>
+       <height>260</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Rienda</string>
+    </attribute>
+    <widget class="QListWidget" name="liwRiendas">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>370</width>
+       <height>260</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>270</y>
+       <width>370</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Tipo de Rienda</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QLineEdit" name="txtRienda">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>260</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdGuardarRienda">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Guardar 💾</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdNuevaRienda">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nueva✨</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdBorrarRienda">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>75</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Borrar 🗑</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>tabWidget</zorder>
+  <zorder>cmdSalir</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

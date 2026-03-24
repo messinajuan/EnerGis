@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>529</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Listados de Líneas</string>
+  </property>
+  <widget class="QTableWidget" name="tblListado">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>65</y>
+     <width>510</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbTension">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>7</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>9</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nivel de Tensión</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbAgrupar1">
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>35</y>
+     <width>180</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>35</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agrupar por :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>35</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>y por :</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbAgrupar2">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>35</y>
+     <width>180</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>430</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total [km]</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>446</x>
+     <y>430</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdExportar">
+   <property name="geometry">
+    <rect>
+     <x>366</x>
+     <y>430</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exportar 📤</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtLongitud">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>430</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

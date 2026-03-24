@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>262</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TI - TV</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>283</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>283</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chkCombinados">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>140</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TI + TV Combinados</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>240</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="txtI2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>14</y>
+      <width>30</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I1 [A]</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtI1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>14</y>
+      <width>30</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I2 [A]</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbTecnologiaI">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>140</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_parametro1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>44</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Función</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbFuncionI">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>40</y>
+      <width>140</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_parametro2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>74</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tecnología</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>240</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="txtV2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>14</y>
+      <width>30</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V1 [V]</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtV1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>14</y>
+      <width>30</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>V2 [V]</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbTecnologiaV">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>140</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_parametro1_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>44</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Función</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbFuncionV">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>40</y>
+      <width>140</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_parametro2_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>74</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tecnología</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="cmbMontaje">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>230</y>
+     <width>160</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_parametro2_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>233</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Montaje</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

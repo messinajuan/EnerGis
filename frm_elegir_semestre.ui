@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>132</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Elegir Semestre</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>100</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>100</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Semestre Actual</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_semestre_actual">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Desde</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hasta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>170</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Energía del Semestre a Informar</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbSemestre">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>60</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Número</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Desde</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hasta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>50</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Número</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_actual_desde">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>50</y>
+     <width>90</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1900-01-01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_actual_hasta">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>90</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1900-01-01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_elegido_desde">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>50</y>
+     <width>90</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1900-01-01</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_elegido_hasta">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>70</y>
+     <width>90</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1900-01-01</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

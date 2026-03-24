@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lineas</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>384</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpNeutro">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>236</y>
+     <width>220</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Datos del Neutro</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>22</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sección [mm2]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbMaterialNeutro">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>52</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>52</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbSeccionNeutro">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>384</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>2</y>
+     <width>450</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Agregar o Modificar un Conductor</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>52</y>
+      <width>130</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Corriente Nominal [A]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grpConductor">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>23</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Elemento</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtElemento">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>161</x>
+      <y>23</y>
+      <width>280</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtCorriente">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>50</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>82</y>
+      <width>130</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sección Nominal [mm2]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>52</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R1 [ohm/km]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtR1">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtX1">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>78</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X1 [ohm/km]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtR0">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>108</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>110</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>R0 [ohm/km]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtX0">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>138</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>140</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X0 [ohm/km]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtXc">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>168</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhFormattedNumbersOnly</set>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>170</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Xc [&lt;span style=&quot; font-family:'Symbol'; font-size:11pt;&quot;&gt;m&lt;/span&gt;F/km]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbTipo">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>111</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tipo</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>139</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbMaterial">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>138</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>168</y>
+      <width>130</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Aislación</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbAislacion">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>167</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbSeccionFase">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpHG">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>236</y>
+     <width>220</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Posee HG</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>22</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sección [mm2]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbMaterialHG">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>52</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbSeccionHG">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpAL">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>324</y>
+     <width>220</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Posee Cond Alumbrado</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>22</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sección [mm2]</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbMaterialAL">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>52</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>52</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cmbSeccionAL">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>100</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="txtSubconductores">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>334</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>336</y>
+     <width>130</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Conductores por Fase</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbAt">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>210</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>AT</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbMt">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>210</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>MT</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbBt">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>210</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>BT</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbAcometida">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>210</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Acometida BT</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rbTodo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>210</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>Universal</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

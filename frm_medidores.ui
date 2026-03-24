@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>319</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Medidor</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>130</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>44</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Marca</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtMarca">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>74</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modelo</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtModelo">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>14</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Año</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtAnio">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>10</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>44</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Fases</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtFases">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblMedidor">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>14</y>
+     <width>140</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Id Medidor:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdElementos">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>130</y>
+     <width>90</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Elementos 📋</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>74</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Relación</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtRelacion">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>70</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>104</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tipo</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbTipo">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>234</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

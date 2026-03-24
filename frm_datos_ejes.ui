@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>313</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Datos de los Ejes</string>
+  </property>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>226</x>
+     <y>198</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QToolBox" name="toolBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>291</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="tabSpacing">
+    <number>6</number>
+   </property>
+   <widget class="QWidget" name="calle">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Cargar Ciudad y Calle</string>
+    </attribute>
+    <widget class="QComboBox" name="cmbCalle">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>40</y>
+       <width>170</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>45</y>
+       <width>70</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Calle</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cmdCiudades">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>30</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cmbCiudad">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>10</y>
+       <width>170</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cmdCalles">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>30</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>70</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ciudad</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="alturas">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Cargar Alturas</string>
+    </attribute>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>40</y>
+       <width>70</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Izquierda A</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDerde">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtIzqde">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>40</y>
+       <width>60</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Derecha A</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>13</y>
+       <width>70</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Izquierda De</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>13</y>
+       <width>60</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Derecha De</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtIzqa">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>37</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDera">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>37</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <attribute name="label">
+     <string>Otras Operaciones</string>
+    </attribute>
+    <widget class="QCheckBox" name="chkInvertir">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>110</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Invertir Sentido</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>198</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Reclamos de la Contingencia</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>584</x>
+     <y>470</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="cmdAgregar">
+   <property name="geometry">
+    <rect>
+     <x>589</x>
+     <y>251</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Agregar ➕</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>120</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reclamos del evento</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="cmdQuitar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>461</y>
+     <width>70</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quitar ➖</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tbl1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>650</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::SelectedClicked</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ContiguousSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <widget class="QTableWidget" name="tbl2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>650</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::SelectedClicked</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::ContiguousSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <widget class="QDateEdit" name="datFecha">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>4</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>110</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reclamos de Fecha</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

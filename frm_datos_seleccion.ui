@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>771</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Selección</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="tabPosition">
+          <enum>QTabWidget::South</enum>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab2">
+          <attribute name="title">
+           <string>Elementos Seleccionados</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QTreeWidget" name="treeWidget">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>300</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="columnCount">
+                  <number>0</number>
+                 </property>
+                 <attribute name="headerVisible">
+                  <bool>true</bool>
+                 </attribute>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableWidget" name="tblResultado">
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::SingleSelection</enum>
+                 </property>
+                 <property name="selectionBehavior">
+                  <enum>QAbstractItemView::SelectRows</enum>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0">
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="cmdActualizarDatos">
+                 <property name="text">
+                  <string>Actualizar Datos 🔄</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cmdExportar">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="text">
+                  <string>Exportar 📤</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab3">
+          <attribute name="title">
+           <string>Análisis de Carga</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,1">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>Cantidad de Transformadores</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtTransformadores">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Total Potencia Instalada [kVA]</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtPotenciaInstalada">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Cantidad de Usuarios</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtUsuarios">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>Energía - Fecha Desde</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="datDesde"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>Energía - Fecha Hasta</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QDateEdit" name="datHasta"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="text">
+                  <string>Energía Total Consumida [kWh]</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtEnergiaTotal">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Cantidad de Horas de uso de la Energía</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtHoras">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>Factor de Carga</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtFactorCarga">
+                 <property name="inputMethodHints">
+                  <set>Qt::ImhFormattedNumbersOnly</set>
+                 </property>
+                 <property name="text">
+                  <string>0.5</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Demanda Total Calculada [kW]</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="txtDemanda">
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTextBrowser" name="txtMemoria">
+               <property name="font">
+                <font>
+                 <family>Courier New</family>
+                </font>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab1">
+          <attribute name="title">
+           <string>Longitudes de Líneas</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="1">
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="spacing">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QTableWidget" name="tblLongitudes"/>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>Longitud Total de Líneas [km]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="lblLongitudTotal">
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="cmdExportarLineas">
+                   <property name="text">
+                    <string>Exportar 📤</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_13">
+                 <property name="text">
+                  <string>Nivel de Tensión</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbTension"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_14">
+                 <property name="text">
+                  <string>Agrupar por:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbAgrupar1"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>Agrupar por:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbAgrupar2"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>Agrupar por:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbAgrupar3"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Agrupar por:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cmbAgrupar4"/>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab4">
+          <property name="maximumSize">
+           <size>
+            <width>751</width>
+            <height>412</height>
+           </size>
+          </property>
+          <attribute name="title">
+           <string>Penalización por Cortes</string>
+          </attribute>
+          <widget class="QWidget" name="verticalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>7</x>
+             <y>6</y>
+             <width>740</width>
+             <height>400</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,1">
+              <property name="spacing">
+               <number>2</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,0,0,0,0,0,0,0,0,0,0">
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_16">
+                  <property name="text">
+                   <string>CENS Tarifas 1 y 4 [$/kWh]</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="txtCens1">
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_17">
+                  <property name="text">
+                   <string>CENS Tarifas 2, 3 y 5 [$/kWh]</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="txtCens2">
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Cantidad de Usuarios</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="txtCantUsuarios">
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                  <property name="readOnly">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_22">
+                  <property name="text">
+                   <string>Hora de Corte</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTimeEdit" name="timHoraDesde">
+                  <property name="time">
+                   <time>
+                    <hour>8</hour>
+                    <minute>0</minute>
+                    <second>0</second>
+                   </time>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_23">
+                  <property name="text">
+                   <string>Hora de Reposición</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTimeEdit" name="timHoraHasta">
+                  <property name="time">
+                   <time>
+                    <hour>9</hour>
+                    <minute>0</minute>
+                    <second>0</second>
+                   </time>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="txtMemoriaCalidad">
+                <property name="font">
+                 <font>
+                  <family>Courier New</family>
+                 </font>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cmdCalcularMulta">
+                <property name="text">
+                 <string>Calcular ∑</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Escalado de Cargas</string>
+          </attribute>
+          <widget class="QLineEdit" name="txtMultiplicador">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>100</y>
+             <width>60</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>1.000</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>40</y>
+             <width>200</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Demanda Total de la Selección [kVA]</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>59</x>
+             <y>100</y>
+             <width>181</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Multiplicar el factor anterior por :</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblDemanda">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>40</y>
+             <width>160</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>0 kW +j 0 kVAr</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>70</y>
+             <width>140</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Factor de Escala Actual</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblFactorEscala">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>70</y>
+             <width>40</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>1.000</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>140</y>
+             <width>140</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Demanda Final:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lblDemandaFinal">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>140</y>
+             <width>160</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>0 kW +j 0 kVAr</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="cmdAplicar">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>160</y>
+             <width>75</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Aplicar ✅</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="0,0">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cmdSalir">
+       <property name="text">
+        <string>Salir ⏻</string>
+       </property>
+       <property name="shortcut">
+        <string>Esc</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

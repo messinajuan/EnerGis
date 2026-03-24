@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Eje</string>
+  </property>
+  <widget class="QComboBox" name="cmbCiudad">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>170</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtIzqde">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>120</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>12</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Eje</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblEje">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>11</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;automático&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>123</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Izquierda De</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdAceptar">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>190</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aceptar ✅</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>55</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ciudad</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>85</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdSalir">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>190</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir ⏻</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCiudades">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>50</y>
+     <width>30</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🔍</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cmdCalles">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>80</y>
+     <width>30</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>🔍</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblAux">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>11</y>
+     <width>80</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbCalle">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>170</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDerde">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>120</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>145</x>
+     <y>123</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Derecha De</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtIzqa">
+   <property name="geometry">
+    <rect>
+     <x>85</x>
+     <y>147</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDera">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>147</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhFormattedNumbersOnly</set>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>145</x>
+     <y>150</y>
+     <width>60</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Derecha A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>70</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Izquierda A</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
